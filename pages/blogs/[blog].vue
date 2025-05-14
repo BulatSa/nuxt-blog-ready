@@ -83,7 +83,7 @@ console.log(articles.value)
 
 // Generate OG Image
 defineOgImageComponent('Test', {
-  headline: 'Riyads Blog 👋',
+  headline: 'Блог Булата Садикова 👋',
   title: articles.value?.seo.title || '',
   description: articles.value?.seo.description || '',
   link: data.value.ogImage,
@@ -106,7 +106,7 @@ defineOgImageComponent('Test', {
       >
         <ContentRenderer v-if="articles" :value="articles">
           <template #empty>
-            <p>No content found.</p>
+            <p>Не найдено.</p>
           </template>
         </ContentRenderer>
       </div>

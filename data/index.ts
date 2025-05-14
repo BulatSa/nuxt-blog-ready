@@ -26,7 +26,7 @@ export const blogsPage = {
 export const categoryPage = {
   title: 'Категории',
   description:
-    'Это раздел с категориями постов и тегов, упомянутых в постах',
+    'Это раздел с категориями постов и тегов, о которых я писал',
 }
 
 export const aboutPage = {
