@@ -60,9 +60,9 @@ useHead({
       <h2 class="text-4xl font-semibold text-black dark:text-zinc-300">Последние посты</h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid grid-cols-1">
       <template v-for="post in formattedData" :key="post.title">
-        <BlogCard
+        <ArchiveCard
           :path="post.path"
           :title="post.title"
           :date="post.date"
