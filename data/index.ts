@@ -40,6 +40,7 @@ export const seoData = {
   title: `Блог Булата Садикова`,
   ogTitle: `Учимся Javascript, Typescript, Vue, Nuxt и решению проблем - Блог Булата Садикова`,
   description: `Привет, я Булат. Фронтенд разработчик с 10 летним опытом разработки. - Блог Булата Садикова`,
+  twitterDescription: `Привет, я Булат. Фронтенд разработчик с 10 летним опытом разработки. - Блог Булата Садикова`,
   image:
     'https://res.cloudinary.com/dmecmyphj/image/upload/v1673548905/nuxt-blog/cover_ntgs6u.webp',
   mySite: 'https://bulatsa.ru',
@@ -86,6 +87,10 @@ export const siteMetaData = [
   {
     name: 'twitter:title',
     content: seoData.ogTitle,
+  },
+  {
+    name: 'twitter:description',
+    content: seoData.twitterDescription,
   },
   {
     name: 'twitter:image',
