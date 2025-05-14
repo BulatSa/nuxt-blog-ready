@@ -24,11 +24,11 @@ function isActive(path: string) {
       </ul>
       <ul class="flex items-center space-x-3 sm:space-x-6 text-sm sm:text-lg">
         <li>
-          <NuxtLink to="/blogs" :class="{ underline: isActive('/blogs') }"> Blogs </NuxtLink>
+          <NuxtLink to="/blogs" :class="{ underline: isActive('/blogs') }"> Блог </NuxtLink>
         </li>
         <li>
           <NuxtLink to="/categories" :class="{ underline: isActive('/categories') }">
-            Categories
+            Категории
           </NuxtLink>
         </li>
         <li title="About Me">
@@ -37,7 +37,7 @@ function isActive(path: string) {
             aria-label="About me"
             :class="{ underline: $route.path === '/about' }"
           >
-            About
+            Обо мне
           </NuxtLink>
         </li>
         <li>

@@ -2,7 +2,7 @@
 import { aboutPage, footerData, navbarData, socialLinks } from '~/data'
 
 useHead({
-  title: 'About',
+  title: 'Обо мне',
   meta: [
     {
       name: 'description',

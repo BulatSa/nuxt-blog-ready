@@ -2,21 +2,21 @@
 import { navbarData } from '~/data'
 
 useHead({
-  title: 'Home',
+  title: 'Главная',
   meta: [
     {
       name: 'description',
       content:
-        'Welcome To My Blog Site. Get Web Development, Javascript, Typescript, NodeJs, Vue, and Nuxt, Related Articles, Tips, Learning resources and more.',
+        'Добро пожаловать в мой блог. Поговорим о веб-разработке, книгах и курсах.',
     },
   ],
 })
 
 // Generate OG Image
-defineOgImageComponent('About', {
-  headline: 'Greetings 👋',
+defineOgImageComponent('Обо мне', {
+  headline: 'Приветствую 👋',
   title: navbarData.homeTitle,
-  description: 'Dive into web development with me and learn Js, Ts, Vue, Nuxt, Docker, k8s',
+  description: 'Погрузимся со мной в обучение Js, Ts, Vue, Nuxt, Docker, k8s',
   link: '/riyad.jpg',
 })
 </script>
