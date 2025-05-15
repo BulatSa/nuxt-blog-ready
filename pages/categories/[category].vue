@@ -49,16 +49,6 @@ useHead({
     },
   ],
 })
-
-// Generate OG Image
-const siteData = useSiteConfig()
-defineOgImage({
-  props: {
-    title: category.value?.toUpperCase(),
-    description: `Здесь собраны все посты по теме ${category.value}`,
-    siteName: siteData.url,
-  },
-})
 </script>
 
 <template>

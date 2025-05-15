@@ -78,21 +78,11 @@ useHead({
     },
   ],
 })
-
-console.log(articles.value)
-
-// Generate OG Image
-defineOgImageComponent('Test', {
-  headline: 'Блог Булата Садикова 👋',
-  title: articles.value?.seo.title || '',
-  description: articles.value?.seo.description || '',
-  link: data.value.ogImage,
-})
 </script>
 
 <template>
   <div class="px-6 container max-w-5xl mx-auto sm:grid grid-cols-12 gap-x-12">
-    <div class="col-span-12 lg:col-span-9">
+    <div class="col-span-12">
       <BlogHeader
         :title="data.title"
         :image="data.image"
@@ -111,7 +101,6 @@ defineOgImageComponent('Test', {
         </ContentRenderer>
       </div>
     </div>
-    <BlogToc />
 
     <div class="flex flex-row flex-wrap md:flex-nowrap mt-10 gap-2">
       <SocialShare

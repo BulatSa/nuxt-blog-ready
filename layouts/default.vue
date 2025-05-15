@@ -1,5 +1,5 @@
 <template>
-  <div class="gd-container font-tinos">
+  <div class="gd-container font-notoserif">
     <header class="fixed w-full bg-[#F1F2F4] dark:bg-slate-950 z-10">
       <MainHeader />
     </header>

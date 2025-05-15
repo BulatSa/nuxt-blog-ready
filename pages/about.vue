@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { aboutPage, footerData, navbarData, socialLinks } from '~/data'
+import { aboutPage, footerData, socialLinks } from '~/data'
 
 useHead({
   title: 'Обо мне',
@@ -9,13 +9,6 @@ useHead({
       content: footerData.aboutAuthor,
     },
   ],
-})
-
-defineOgImageComponent('Обо мне', {
-  headline: 'Приветствую 👋',
-  title: navbarData.homeTitle,
-  description: 'Погрузимся со мной в обучение Js, Ts, Vue, Nuxt, Docker, k8s',
-  link: '/bulat.jpg',
 })
 </script>
 

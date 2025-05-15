@@ -4,8 +4,6 @@ import { seoData } from './data'
 export default defineNuxtConfig({
   compatibilityDate: '2024-09-30',
 
-  ssr: false,
-
   modules: [
     'nuxt-icon',
     '@nuxt/image',
@@ -14,7 +12,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
-    'nuxt-og-image',
     '@nuxt/content',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
@@ -49,7 +46,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/rss.xml'],
+      routes: ['/sitemap.xml', '/robots.txt', '/rss.xml'],
     },
   },
 

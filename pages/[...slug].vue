@@ -9,11 +9,6 @@ useHead({
   ],
 })
 
-defineOgImageComponent('О странице', {
-  headline: 'Неверный путь',
-  title: '404',
-  description: 'Страница не найдена',
-})
 </script>
 
 <template>

@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         spacegrotesk: ['Space Grotesk', 'sans-serif'],
-        tinos: ['Tinos', 'serif']
+        notoserif: ['Noto Serif', 'serif']
       },
     },
   },

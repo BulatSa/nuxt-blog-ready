@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { navbarData } from '~/data'
-
 useHead({
   title: 'Главная',
   meta: [
@@ -10,14 +8,6 @@ useHead({
         'Добро пожаловать в мой блог. Поговорим о веб-разработке, книгах и курсах.',
     },
   ],
-})
-
-// Generate OG Image
-defineOgImageComponent('Обо мне', {
-  headline: 'Приветствую 👋',
-  title: navbarData.homeTitle,
-  description: 'Погрузимся со мной в обучение Js, Ts, Vue, Nuxt, Docker, k8s',
-  link: '/bulat.jpg',
 })
 </script>
 

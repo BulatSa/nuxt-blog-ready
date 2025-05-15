@@ -74,15 +74,6 @@ useHead({
   ],
 })
 
-// Generate OG Image
-const siteData = useSiteConfig()
-defineOgImage({
-  props: {
-    title: 'Посты',
-    description: 'Здесь вы найдете все посты написанные и опубликованные на сайте.',
-    siteName: siteData.url,
-  },
-})
 </script>
 
 <template>
