@@ -4,6 +4,8 @@ import { seoData } from './data'
 export default defineNuxtConfig({
   compatibilityDate: '2024-09-30',
 
+  ssr: false,
+
   modules: [
     'nuxt-icon',
     '@nuxt/image',
