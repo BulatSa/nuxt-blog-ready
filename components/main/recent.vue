@@ -3,8 +3,8 @@ import type { BlogPost } from '~/types/blog'
 
 // Function to parse dates in the format "1st Mar 2023"
 function parseCustomDate(dateStr: string): Date {
-  // Remove ordinal indicators (st, nd, rd, th)
-  const cleanDateStr = dateStr.replace(/(\d+)(st|nd|rd|th)/, '$1')
+  // Prepare date str
+  const cleanDateStr = dateStr.split('-').reverse().join('-');
   // Parse the date
   return new Date(cleanDateStr)
 }
@@ -18,7 +18,7 @@ const { data } = await useAsyncData('recent-post', () =>
         .sort((a, b) => {
           const aDate = parseCustomDate(a.meta.date as string)
           const bDate = parseCustomDate(b.meta.date as string)
-          // debugger;
+
           return bDate.getTime() - aDate.getTime()
         })
         .slice(0, 3)
