@@ -36,11 +36,9 @@
     "nuxt": "^3.16.1",
     "nuxt-icon": "^0.6.8",
     "nuxt-og-image": "^5.0.2",
+    "nuxt-yandex-metrika": "^1.2.9",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2",
     "unenv": "^1.10.0"
-  },
-  "dependencies": {
-    "yandex-metrika-module-nuxt3": "^1.5.3"
   }
 }
