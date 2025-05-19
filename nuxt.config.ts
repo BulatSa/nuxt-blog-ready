@@ -17,6 +17,14 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@formkit/auto-animate',
     '@stefanobartoletti/nuxt-social-share',
+    ['yandex-metrika-module-nuxt3',
+      {
+        id: '47293344',
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      }
+    ]
   ],
 
   app: {
