@@ -2,6 +2,14 @@
 import type { BlogPost } from '@/types/blog'
 const route = useRoute()
 
+// Function to parse dates in the format "1st Mar 2023"
+function parseCustomDate(dateStr: string): Date {
+  // Prepare date str
+  const cleanDateStr = dateStr.split('-').reverse().join('-');
+  // Parse the date
+  return new Date(cleanDateStr)
+}
+
 // take category from route params & make first char upper
 const category = computed(() => {
   const name = route.params.category || ''
@@ -16,10 +24,17 @@ const { data } = await useAsyncData(`category-data-${category.value}`, () =>
   queryCollection('content')
     .all()
     .then((articles) =>
-      articles.filter((article) => {
-        const meta = article.meta as unknown as BlogPost
-        return meta.tags.includes(category.value)
-      }),
+      articles
+        .filter((article) => {
+          const meta = article.meta as unknown as BlogPost
+          return meta.tags.includes(category.value)
+        })
+        .sort((a, b) => {
+          const aDate = parseCustomDate(a.meta.date as string)
+          const bDate = parseCustomDate(b.meta.date as string)
+
+          return bDate.getTime() - aDate.getTime()
+        }),
     ),
 )
 
