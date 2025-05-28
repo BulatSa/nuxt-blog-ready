@@ -9,7 +9,7 @@ function parseCustomDate(dateStr: string): Date {
   return new Date(cleanDateStr)
 }
 
-// Get Last 6 Publish Post from the content/blog directory
+// Get Last 10 Publish Post from the content/blog directory
 const { data } = await useAsyncData('recent-post', () =>
   queryCollection('content')
     .all()
@@ -21,7 +21,7 @@ const { data } = await useAsyncData('recent-post', () =>
 
           return bDate.getTime() - aDate.getTime()
         })
-        .slice(0, 3)
+        .slice(0, 10)
     }),
 )
 
