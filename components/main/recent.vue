@@ -39,7 +39,7 @@ const formattedData = computed(() => {
       tags: meta.tags || [],
       published: meta.published || false,
     }
-  })
+  }).filter((item)=> item.published)
 })
 
 useHead({
