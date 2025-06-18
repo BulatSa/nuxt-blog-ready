@@ -27,7 +27,7 @@ const { data } = await useAsyncData(`category-data-${category.value}`, () =>
       articles
         .filter((article) => {
           const meta = article.meta as unknown as BlogPost
-          return meta.tags.includes(category.value)
+          return meta.tags.includes(category.value) && meta.published;
         })
         .sort((a, b) => {
           const aDate = parseCustomDate(a.meta.date as string)
