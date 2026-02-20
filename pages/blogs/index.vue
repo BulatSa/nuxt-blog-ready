@@ -101,7 +101,7 @@ useHead({
   <main class="container max-w-5xl mx-auto text-zinc-600">
     <ArchiveHero />
 
-    <div class="px-6">
+    <div class="px-4">
       <input
         v-model="searchTest"
         placeholder="Поиск"
