@@ -15,7 +15,7 @@ const path = computed(() => route.fullPath.replace('/', ''))
       </div>
 
       <div class="border-t dark:border-gray-800 mt-5 text-center p-2">
-        © 2015-2025 Это 
+        © 2015-2026 Это 
         <a href="https://github.com/BulatSa/nuxt-blog-ready" target="_blank" rel="nofollow" class="underline"
           >опенсорсный проект</a
         >.
